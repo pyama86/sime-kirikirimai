@@ -1,5 +1,5 @@
 build:
-	docker build -t pyama/simekirikirimai:0.0.1 .
+	docker build --squash -t pyama/simekirikirimai:0.0.1 .
 
 push: build
 	docker push pyama/simekirikirimai:0.0.1
